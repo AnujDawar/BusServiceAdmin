@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anujdawar.busserviceadmin.MainActivity">
+
+    <EditText
+        android:id="@+id/busNumberID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Bus Number"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/busTypeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bus Type"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/busCompanyID"
+        android:layout_alignLeft="@+id/busCompanyID"
+        android:layout_alignStart="@+id/busCompanyID"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/busRouteID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bus Route"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/busTypeID"
+        android:layout_alignLeft="@+id/busTypeID"
+        android:layout_alignStart="@+id/busTypeID"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/busFareID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bus Fare"
+        android:inputType="textPersonName"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/busRouteID"
+        android:layout_alignLeft="@+id/busRouteID"
+        android:layout_alignStart="@+id/busRouteID" />
+
+    <EditText
+        android:id="@+id/busCompanyID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/busNumberID"
+        android:layout_alignStart="@+id/busNumberID"
+        android:layout_below="@+id/busNumberID"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Bus Company"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addToServerButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busFareID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="add to server" />
+</RelativeLayout>
